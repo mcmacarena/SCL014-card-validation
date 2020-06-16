@@ -28,7 +28,7 @@ publicistas, ilustradores, directores de arte o artistas, los cuales poseen un r
 la decoración de sus hogares.
 
 ## 3.2-Cómo el producto soluciona los problemas
-Designical solo funcionaba a través de venta fisica y redes sociales(instagram, marketplace de facebook etc) y constaba unicamente con medios de pago físico y transferencia bancaria. 
+Designical solo funcionaba a través de venta fisica y redes sociales(instagram, marketplace de facebook etc) y constaba únicamente con medios de pago físico y transferencia bancaria. 
 Dada la situación actual (coronavirus), nuestros usuarios tienen la posibilidad de trabajar remoto, por lo cual Designical ha decidido enfocar sus recursos a la venta online de muebles a través de un canal oficial y propio, para establecer de manera formal la venta y posicionarse en el mercado, con especial enfoque al departamento de "HOME OFFICE". 
 Nuestro validador de tarjeta le da seguridad tanto al cliente como a los usuarios, realizando el pago de manera segura, simple y eficaz. Al evitar medios alternativos de pago, evitamos a su vez conflictos y complicaciones, permitiendo además la posibilidad de comprar en cuotas, lo cual es un plus para llegar a más usuarios.
 
@@ -36,12 +36,12 @@ Nuestro validador de tarjeta le da seguridad tanto al cliente como a los usuario
 
 ## 5-Resumen feedback 
 -Darle protagonismo a la verificación de tarjeta (proceso de pago).
--Botón inactivo si la tarjeta no se ha validado para que el cliente no continue el proceso sin validar.
+-Botón inactivo si la tarjeta no se ha validado para que el cliente no continúe el proceso sin validar.
 -Detalles del producto en carro de compra (nombre, color etc)
 
 ## 6-Imagen prototipo final
 
-
+![alt text](http:https://imgur.com/xFXMHkA)
 
 ​
 
