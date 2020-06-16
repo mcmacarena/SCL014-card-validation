@@ -1,14 +1,190 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- LINK ICONOS RRSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header id="marketplace">
+        <!--Primer texto header-->
+        <p id="firstTextHeader"> hola@tienda.cl | +56900000000 | Seguimiento de tu compra | Cambios y devoluciones</p>
+        <!-- Logo + Buscador-->
+        <div id="firstContainer">
+            <img id="logo" src="img/designical-logo.png">
+            <div class="searchBtn">
+                <input type="text" placeholder="Buscar...">
+                <button>Enviar</button>
+            </div>
+        </div>
+        <div id="menuContainer">
+            <ul class="menu">
+                <li><a href="#">COMEDOR</a></li>
+                <li><a href="#">DORMITORIO</a></li>
+                <li><a href="#">LIVING</a></li>
+                <li><a href="#">DECORACIÓN</a></li>
+                <li><a href="#">HOME OFFICE</a></li>
+                <li><a href="#">TERRAZA</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- PÁGINA 1: Carrito de Compras -->
+    <main id="screen1" class="">
+        <p><strong>Carro de compras</strong>----------------------------------- Pago Seguro ------------------------------------------ Confirmación </p>
+        <section class="shoppingCartTable">
+            <table class="table1">
+                <tr>
+                    <th>Producto</th>
+                    <th>Métodos de Entrega</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+
+                <tr>
+                    <td><img id="productScreen1" src="img/mueble.jpg" colspan="4"></td>
+                    <td>Despacho a domicilio<br>Retiro en Tienda</td>
+                    <td>1 Unidad</td>
+                    <td>$80.000</td>
+                    <td>$80.000</td>
+                </tr>
+
+                <tr>
+                    <td>Cód. Producto: 12345<br>Escritorio Iberia<br>Color: Oak-Turquesa</td>
+                </tr>
+            </table>    
+        </section>
+
+        <button class="button" id="btnCart">Continuar con la compra</button>
+
+    </main>
+
+    <!-- PÁGINA DOS: Resumen de compra + Validador de Tarjeta-->
+    <main id="screen2" class="hide">
+        <p>Carro de compras-----------------------------------<strong>Pago Seguro</strong> ------------------------------------------ Confirmación </p>
+        <section id="shoppingResume">
+            <table>
+                <thead><h3></h3>RESUMEN DE TU COMPRA</h3></thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Detalle</th>
+                </tr>
+                <tr>
+                    <td rowspan="4"><img id="productScreen2" src="img/mueble.jpg"></td>
+                    <td>Cód. Producto: 12345<br>Escritorio Iberia<br>Color: Oak-Turquesa<br><strong>TOTAL: $80.000</strong></td>
+                </tr>
+            </table>
+
+        </section>
+
+        <table id="cardValidation">
+            <thead>
+                <td><label for="form"><strong>Tu pago 100% seguro</strong></label></td>
+            </thead>
+            <tbody>
+                <td><img id="creditCardImage" src="img/credit_card.png" alt=""></td>
+                <td><input id="creditCardNumber" placeholder="N° de tarjeta (sin espacios)" maxlength="16"><br>
+                    <p id="returnMessage" class="hide"></p>
+                    <p id="returnErrorMessage" class="hide"></p>
+                    <select id="month" type="text" placeholder="Mes venc.">
+                        <option type="radio">01</option>
+                        <option type="radio">02</option>
+                        <option type="radio">03</option>
+                        <option type="radio">04</option>
+                        <option type="radio">05</option>
+                        <option type="radio">06</option>
+                        <option type="radio">07</option>
+                        <option type="radio">08</option>
+                        <option type="radio">09</option>
+                        <option type="radio">10</option>
+                        <option type="radio">11</option>
+                        <option type="radio">12</option>
+                    </select>
+                    <select id="year" type="text" placeholder="Año venc.">
+                        <option type="radio">2020</option>
+                        <option type="radio">2021</option>
+                        <option type="radio">2022</option>
+                        <option type="radio">2023</option>
+                        <option type="radio">2024</option>
+                        <option type="radio">2025</option>
+                    </select><br>
+                    <input id="cvv" type="password" placeholder="CVV" maxlength="3"><br>
+                    <button class="buttonHide" id="btnBuy">Confirmar Pago</button>
+                </td>
+            </tbody>
+        </table>
+    </main>
+    <!-- PAGINA TRES-->
+    <main id="screen3" class="hide">
+    <p>Carro de compras-----------------------------------Pago Seguro ------------------------------------------<strong>Confirmación Pedido</strong></p>
+        <section id="thanksContainer">
+
+            <img src="" alt=""> <!-- carrito de compra con mensaje -->
+            <h3>Gracias por elegir comprar en nuestra tienda</h3>
+            <img src="" alt="">  <!-- detalle de compra -->
+            <button class="button" id="btnBuyAgain">Volver a comprar</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <table id="footerContainer" class="">
+            <tr>
+                <th>SOBRE DESIGNICAL</th>
+                <th>AYUDA</th>
+                <th>SUSCRÍBETE AL NEWSLETTER</th>
+                <th>FORMAS DE PAGO</th>
+                <th>SÍGUENOS EN REDES SOCIALES</th>
+            </tr>
+            <tr>
+                <td>Quiénes Somos</td>
+                <td>hola@designical.cl</td>
+                <td><input type="text" placeholder="Escribe tu correo acá...">
+                    <button>Enviar</button></td>
+                <td>Tarjeta de Crédito</td>
+                <td rowspan="3"><a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a></td>
+            </tr>
+            <tr>
+                <td>Prensa</td>
+                <td>+569000000000</td>
+                <td></td>
+                <td>Transferencia Bancaria</td>
+            </tr>
+            <tr>
+                <td>Vender en Designical</td>
+                <td>Seguimiento de tu pedido</td>
+                <td></td>
+                <td rowspan="3"><img id="webpay" src="img/LogoWebpay_cl-Tarjetas-01.png"></td>
+            </tr>
+            <tr>
+                <td>Venta Empresas</td>
+                <td>Punto de retiro</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Contacto</td>
+                <td>Despacho</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>FAQ</td>
+                <td>Cambios y Devoluciones</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </footer>
+    <script type="module" src="index.js" ></script>
+</body>
 </html>
