@@ -47,7 +47,7 @@ permitiendo además la posibilidad de comprar en cuotas, lo cual es un plus para
 
 ## 6-Imagen prototipo final
 
-http:https://imgur.com/xFXMHkA
+https://imgur.com/xFXMHkA
 
 ​
 
