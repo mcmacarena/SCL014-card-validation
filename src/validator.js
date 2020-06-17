@@ -1,3 +1,5 @@
+
+
 const validator = {
     isValid:(creditCard)=>{
         let creditCardNumbers = new Array(16);
@@ -38,15 +40,16 @@ const validator = {
     maskify:(creditCard)=>{
         let newfirstNumbers=new String();
         let showedCreditCardNumbers;
-        if(creditCard.length<4){
-            creditCard=creditCard
-        } else{
+        if(creditCard.length>4){
             let lastNumbers=creditCard.slice(-4);
             let firstNumbers=creditCard.slice(0,-4);
             for (let i = 0; i< firstNumbers.length; i++) {
                 newfirstNumbers+="#"
             }
             showedCreditCardNumbers=newfirstNumbers+lastNumbers;
+            return showedCreditCardNumbers;  
+        }else{
+            showedCreditCardNumbers=creditCard;
             return showedCreditCardNumbers;
         }
     }
