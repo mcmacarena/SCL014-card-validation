@@ -1,5 +1,3 @@
-
-
 const validator = {
     isValid:(creditCard)=>{
         let creditCardNumbers = new Array(16);
@@ -28,7 +26,7 @@ const validator = {
         for ( let i = 0; i < creditCardNumbers.length; i++ ) {
             sumCreditCardNumbers += creditCardNumbers[i]; 
         }
-    
+        
         //comprobando si cifra obtenida es divisible por 10
         if ( sumCreditCardNumbers % 10 === 0 ) {
             return true;
