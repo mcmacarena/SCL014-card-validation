@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592422124946" clover="3.2.0">
-  <project timestamp="1592422124946" name="All files">
+<coverage generated="1592491126655" clover="3.2.0">
+  <project timestamp="1592491126656" name="All files">
     <metrics statements="26" coveredstatements="23" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2" elements="34" coveredelements="29" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
-    <file name="validator.js" path="C:\Users\mac\Desktop\laboratoria\proyectos\credit-card\SCL014-card-validation\src\validator.js">
+    <file name="validator.js" path="C:\Users\catal\Documents-Scripts\PROYECTOS-PROGRAMACION\SCL014-card-validation\src\validator.js">
       <metrics statements="26" coveredstatements="23" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>

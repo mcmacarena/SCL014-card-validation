@@ -5,23 +5,29 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(224, 224, 224);
+    background-color: #f5efef;
     font-size: 20px;
 }
 
 header {
-    background-color: rgb(197, 192, 186);
-    color: black;
+    background-color: #a5c0b8;
+    color: white;
     width: auto;
     padding: 10px 30px 10px 30px;
+}
+
+#firstTextHeader {
+    text-align: center;
 }
 
 .menu {
     list-style: none;
     padding: 0;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0px auto;
+    background-color: #87aba0;
+    text-align: center;
 }
 
 .menu li {
@@ -29,12 +35,16 @@ header {
 }
 
 .menu li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding: 10px;
 }
+
+/*.menu li a:hover{
+    opacity: .5;
+}*/
 
 /*#firstContainer {
     align-items: baseline;
@@ -44,10 +54,26 @@ header {
 #logo {
     margin-left: 20px;
     display: inline-block;
+    max-width: 300px;
 }
 
 .searchBtn {
     display: inline-block;
+}
+
+.searchBar{
+    display: inline-block;
+    width: 500px;
+    padding: 5px;
+}
+
+.magnifying-glass{
+    width: 100px;
+    height: 30px;
+    background-color: #2eb8b8;
+    color: white;
+    font-size: 18px;
+    border: none;
 }
 
 .hide {
@@ -77,10 +103,11 @@ th {
 }
 
 .button {
-    width: 170px;
-    height: 35px;
-    background-color: rgb(52, 165, 194);
+    width: 250px;
+    height: 50px;
+    background-color: #2eb8b8;
     color: white;
+    font-size: 18px;
     border: none;
     border-radius: .5em;
     display: block;
@@ -99,7 +126,7 @@ th {
 }
 
 #screen1, #screen2, #screen3 {
-    background-color: rgb(224, 224, 224);
+    background-color: #f5efef;
     width: 100%;
     height: 600px;
 }
@@ -173,7 +200,7 @@ label {
 }
 
 footer {
-    background-color: rgb(197, 192, 186);
+    background-color: #a5c0b8;
     width: auto;
     padding: 10px 30px 10px 30px;
 }
