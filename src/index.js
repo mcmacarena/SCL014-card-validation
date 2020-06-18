@@ -16,7 +16,7 @@ function showScreen3(){
     document.getElementById("screen2").classList.add("hide");
 }
 
-//Función que perita ingresar solo dígitos
+//Función que permita ingresar solo dígitos
 document.getElementById("creditCardNumber").addEventListener("keypress", onlyNumbers);
 
 function onlyNumbers(event){
