@@ -95,43 +95,44 @@
                 </ul>
             </div>
 
-        <table id="cardValidation">
-            <thead>
-                <td><label for="form"><strong>Tu pago 100% seguro</strong></label></td>
-            </thead>
-            <tbody>
-                <td><img id="creditCardImage" src="img/credit_card.png" alt=""></td>
-                <td><input id="creditCardNumber" placeholder="N° de tarjeta (sin espacios)" maxlength="16"><br>
-                    <p id="returnMessage" class="hide"></p>
-                    <p id="returnErrorMessage" class="hide"></p>
-                    <select id="month" type="text" placeholder="Mes venc.">
-                        <option type="radio">01</option>
-                        <option type="radio">02</option>
-                        <option type="radio">03</option>
-                        <option type="radio">04</option>
-                        <option type="radio">05</option>
-                        <option type="radio">06</option>
-                        <option type="radio">07</option>
-                        <option type="radio">08</option>
-                        <option type="radio">09</option>
-                        <option type="radio">10</option>
-                        <option type="radio">11</option>
-                        <option type="radio">12</option>
-                    </select>
-                    <select id="year" type="text" placeholder="Año venc.">
-                        <option type="radio">2020</option>
-                        <option type="radio">2021</option>
-                        <option type="radio">2022</option>
-                        <option type="radio">2023</option>
-                        <option type="radio">2024</option>
-                        <option type="radio">2025</option>
-                    </select><br>
-                    <input id="cvv" type="password" placeholder="CVV" maxlength="3"><br>
-                    <button class="buttonHide" id="btnBuy">Confirmar Pago</button>
-                </td>
-            </tbody>
-        </table>
+        <div id="cardValidation">
+            <div>
+                <img id="creditCardImage" src="img/credit_card.png">
+            </div>
+            <div>
+                <input id="creditCardNumber" class="creditCardNumber" placeholder="N° de tarjeta (sin espacios)" maxlength="16"><br>
+                <p id="returnMessage" class="hide"></p>
+                <p id="returnErrorMessage" class="hide"></p>
+                <select id="month" type="text" placeholder="Mes venc.">
+                    <option type="radio">01</option>
+                    <option type="radio">02</option>
+                    <option type="radio">03</option>
+                    <option type="radio">04</option>
+                    <option type="radio">05</option>
+                    <option type="radio">06</option>
+                    <option type="radio">07</option>
+                    <option type="radio">08</option>
+                    <option type="radio">09</option>
+                    <option type="radio">10</option>
+                    <option type="radio">11</option>
+                    <option type="radio">12</option>
+                </select>
+                <select id="year" type="text" placeholder="Año venc."><br>
+                    <option type="radio">2020</option>
+                    <option type="radio">2021</option>
+                    <option type="radio">2022</option>
+                    <option type="radio">2023</option>
+                    <option type="radio">2024</option>
+                    <option type="radio">2025</option>
+                </select><br>
+                <input id="cvv" type="password" placeholder="CVV" maxlength="3">
+            </div>
+        </div>
         </section>
+
+        <div class="secondButton">
+            <button class="buttonHide" id="btnBuy">Confirmar Pago</button>
+        </div>
     </main>
     <!-- PAGINA TRES-->
     <main id="screen3" class="hide">
