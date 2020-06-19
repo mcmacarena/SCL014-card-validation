@@ -21,12 +21,12 @@
             </div>
         </div>
         <div id="menuContainer" class="menu">
-                <a href="#">COMEDOR</a>
-                <a href="#">DORMITORIO</a>
-                <a href="#">LIVING</a>
-                <a href="#">DECORACIÓN</a>
-                <a href="#">HOME OFFICE</a>
-                <a href="#">TERRAZA</a>
+                <a href="#">| COMEDOR |</a>
+                <a href="#">| DORMITORIO |</a>
+                <a href="#">| LIVING |</a>
+                <a href="#">| DECORACIÓN |</a>
+                <a href="#">| HOME OFFICE |</a>
+                <a href="#">| TERRAZA |</a>
         </div>
     </header>
 
@@ -49,35 +49,51 @@
                     <td>1 Unidad</td>
                     <td>$80.000</td>
                     <td>$80.000</td>
+                    <td></td>
                 </tr>
 
                 <tr>
                     <td>Cód. Producto: 12345<br>Escritorio Iberia<br>Color: Oak-Turquesa</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="bgTable">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>    
         </section>
 
-        <button class="button" id="btnCart">Continuar con la compra</button>
+        <div class="firstButton">
+            <button class="button" id="btnCart">Continuar con la compra</button>
+        </div>
 
     </main>
 
     <!-- PÁGINA DOS: Resumen de compra + Validador de Tarjeta-->
     <main id="screen2" class="hide">
         <p class="statusBar">Carro de compras-----------------------------------<strong>Pago Seguro</strong> ------------------------------------------ Confirmación </p>
-        <section id="shoppingResume">
-            <table>
-                <thead><h3>RESUMEN DE TU COMPRA</h3></thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Detalle</th>
-                </tr>
-                <tr>
-                    <td rowspan="4"><img id="productScreen2" src="img/mueble.jpg"></td>
-                    <td>Cód. Producto: 12345<br>Escritorio Iberia<br>Color: Oak-Turquesa<br><strong>TOTAL: $80.000</strong></td>
-                </tr>
-            </table>
-
-        </section>
+        <section class="sectionShopping">
+            <div id="shoppingResume">
+                <ul>
+                <li>RESUMEN DE TU COMPRA</li>
+                <li><img id="productScreen2" src="img/mueble.jpg"></li>
+                <li>DETALLE</li>
+                <li>Cód. Producto: 12345</li>
+                <li>Escritorio Iberia</li>
+                <li>Color: Oak-Turquesa</li>
+                <hr>
+                <li><strong>TOTAL</strong></li> 
+                <li>$80.000</li>
+                </ul>
+            </div>
 
         <table id="cardValidation">
             <thead>
@@ -115,6 +131,7 @@
                 </td>
             </tbody>
         </table>
+        </section>
     </main>
     <!-- PAGINA TRES-->
     <main id="screen3" class="hide">
@@ -128,56 +145,40 @@
     </main>
 
     <footer>
-        <table id="footerContainer" class="">
-            <tr>
-                <th>SOBRE DESIGNICAL</th>
-                <th>AYUDA</th>
-                <th>SUSCRÍBETE AL NEWSLETTER</th>
-                <th>FORMAS DE PAGO</th>
-                <th>SÍGUENOS EN REDES SOCIALES</th>
-            </tr>
-            <tr>
-                <td>Quiénes Somos</td>
-                <td>hola@designical.cl</td>
-                <td><input type="text" placeholder="Escribe tu correo acá...">
-                    <button>Enviar</button></td>
-                <td>Tarjeta de Crédito</td>
-                <td rowspan="3"><a href="#" class="fa fa-facebook"></a>
+            <ul>
+                <li>SOBRE DESIGNICAL</li>
+                <hr>
+                <li>Quiénes somos</li>
+                <li>Prensa</li>
+                <li>Vender en Designical</li>
+                <li>FAQ</li>
+            </ul>
+
+            <ul>
+                <li>AYUDA</li>
+                <hr>
+                <li>hola@designical.cl</li>
+                <li>+56900000000</li>
+                <li>Seguimiento de tu pedido</li>
+            </ul>
+
+            <ul>
+                <li>FORMAS DE PAGO</li>
+                <hr>
+                <li>Tarjeta de Crédito</li>
+                <li>Transferencia Bancaria</li>
+                <li><img id="webpay" src="img/LogoWebpay_cl-Tarjetas-01.png"></li>
+            </ul>
+
+            <ul>
+                <li>SÍGUENOS EN REDES <br>SOCIALES</li>
+                <hr>
+                <li><a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-youtube"></a>
-                    <a href="#" class="fa fa-instagram"></a></td>
-            </tr>
-            <tr>
-                <td>Prensa</td>
-                <td>+569000000000</td>
-                <td></td>
-                <td>Transferencia Bancaria</td>
-            </tr>
-            <tr>
-                <td>Vender en Designical</td>
-                <td>Seguimiento de tu pedido</td>
-                <td></td>
-                <td rowspan="3"><img id="webpay" src="img/LogoWebpay_cl-Tarjetas-01.png"></td>
-            </tr>
-            <tr>
-                <td>Venta Empresas</td>
-                <td>Punto de retiro</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Contacto</td>
-                <td>Despacho</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>FAQ</td>
-                <td>Cambios y Devoluciones</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+                    <a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+               
     </footer>
     <script type="module" src="index.js" ></script>
 </body>
