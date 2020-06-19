@@ -167,6 +167,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 30px;
     /*width: 100%;*/
 }
 
@@ -236,10 +237,17 @@ header {
     color: red;
 }
 
-#thanksContainer {
-    background-color: teal;
-    width: auto;
-    height: 300px;
+.thanksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+
+.lastImage {
+    padding:20px;
+    width: 400px;
 }
 
 footer {
