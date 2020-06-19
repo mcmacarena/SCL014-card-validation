@@ -128,12 +128,24 @@ header {
     padding-bottom: 20px;
 }
 
+.secondButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .buttonHide {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 170px;
-    height: 35px;
-    display: inline-block;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: .5em;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -155,7 +167,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 #shoppingResume {
@@ -169,57 +181,58 @@ header {
     align-items: center;*/
 }
 
-label {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 #cardValidation {
     display: flex;
-    /*justify-content: center;
-    align-items: center;*/
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    width: 710px;
+    background: #fff;
     padding: 20px;
     border-radius: .8em;
-    background: #fff;
 }
 
 #creditCardImage {
-    display: inline-block;
-    max-width: 400px;
-    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
 }
 
-#creditCardNumber {
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-top: 25px;
-    width: 186px;
-    padding: 5px;
+.creditCardNumber {
+    width: 220px;
+    height: 35px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 16px;
 }
 
 #month, #year, #cvv {
-    display: inline-block;
-    margin-right: 7px;
-    margin-bottom: 5px;
-    width: 80px;
-    padding: 5px;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 16px;
 }
 
 ::placeholder{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #returnMessage {
-    font-size: 10px;
-    margin: auto;
-    margin-bottom: 5px;
-    color: green;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: rgb(25, 202, 25);
 }
 
 #returnErrorMessage {
-    font-size: 10px;
-    margin: auto;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     color: red;
 }
 
@@ -272,7 +285,7 @@ hr {
   }
   
   .fa:hover {
-      opacity: 0.7;
+    opacity: 0.7;
   }
   
   .fa-facebook {
