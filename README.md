@@ -16,6 +16,7 @@
 Implementación de pago a través de la tarjeta de crédito en un e-commerce llamado Designical, orientado a la comercialización de muebles y decoración.
 
 ## 2-Imagen final del proyecto
+https://imgur.com/a/OYB5wrI
 
 ## 3-Investigación UX
 
@@ -39,6 +40,9 @@ segura, simple y eficaz. Al evitar medios alternativos de pago, evitamos a su ve
 permitiendo además la posibilidad de comprar en cuotas, lo cual es un plus para llegar a más usuarios.
 
 ## 4-Foto prototipo en papel
+https://imgur.com/zTXXaS5
+https://imgur.com/XkEw4bx
+https://imgur.com/LSzSM18
 
 ## 5-Resumen feedback 
 -Darle protagonismo a la verificación de tarjeta (proceso de pago).
