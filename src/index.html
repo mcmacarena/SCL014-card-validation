@@ -48,16 +48,16 @@
                 <li>Despacho a Domicilio</li>
                 <li>Retiro en tienda</li>
             </ul>
-            <ul>
+            <ul class="box three">
                 <li>Cantidad</li><br><hr>
                 <li>1 unidad</li>
             </ul>
-            <ul>
+            <ul class="box four">
                 <li>Precio <br>
                     Unitario</li><hr>
                 <li>$80.000</li>
             </ul>
-            <ul>
+            <ul class="box five">
                 <li>Total</li><br><hr>
                 <li>$80.000</li>
             </ul>
@@ -73,7 +73,9 @@
 
     <!-- PÁGINA DOS: Resumen de compra + Validador de Tarjeta-->
     <main id="screen2" class="hide">
+    <div class="secondScreen">
         <p class="statusBar">Carro de compras| <strong>Pago Seguro </strong>  | Confirmación </p>
+        <div class="validationPage">
             <div id="shoppingResume">
                 <ul>
                 <li>RESUMEN DE TU COMPRA</li>
@@ -88,8 +90,8 @@
                 </ul>
             </div>
 
-        <div id="cardValidation">Carro de compras| Pago Seguro | <strong>Confirmación</strong>  </p>
-                <img class="creditCardImage"src="img/credit_card.png">
+        <div id="cardValidation">
+                <img id="creditCardImage"src="img/credit_card.png">
             <div>
                 <input id="creditCardNumber" class="creditCardNumber" placeholder="N° de tarjeta (sin espacios)" maxlength="16"><br>
                 <p id="returnMessage" class="hide"></p>
@@ -119,14 +121,17 @@
                 <input id="cvv" type="password" placeholder="CVV" maxlength="3">
             </div>
         </div>
-        </section>
+        </div>
 
         <div class="secondButton">
             <button class="buttonHide" id="btnBuy">Confirmar Pago</button>
         </div>
+    </div>
+
     </main>
     <!-- PAGINA TRES-->
     <main id="screen3" class="hide">
+    <div class="thirdScreen">
     <p class="statusBar"></strong>
         <section class="thanksContainer">
             <img class="lastImage" src="img/fast-shopping-cart_rose.png"><br>
@@ -135,7 +140,7 @@
             <button class="button" id="btnBuyAgain">Volver a comprar</button><br>
 
         </section>
-
+    </div>
     </main>
 
     <footer>
@@ -164,7 +169,7 @@
                 <li><img id="webpay" src="img/LogoWebpay_cl-Tarjetas-01.png"></li>
             </ul>
 
-            <ul>
+            <ul class="socialMedia">
                 <li>SÍGUENOS EN REDES <br>SOCIALES</li>
                 <hr>
                 <li><a href="#" class="fa fa-facebook"></a>
