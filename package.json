@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
-  "homepage":"https://mcmacarena.github.io/SCL014-card-validation/src/index.html",
+  "homepage": "https://mcmacarena.github.io/SCL014-card-validation",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
