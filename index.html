@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- LINK ICONOS RRSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header id="marketplace">
+        <p id="firstTextHeader"> hola@designical.cl | +56900000000 | Seguimiento de tu compra | Cambios y devoluciones</p>
+        <!-- Logo + Buscador-->
+        <div class="firstContainer"> 
+            <img id="logo" src="img/Logo Designical.png">
+            <div class="searchBtn">
+                <input type="text" class="searchBar" placeholder="Buscar...">
+                <button class="magnifying-glass">Buscar</button>
+            </div>
+        </div>
+        <div id="menuContainer" class="menu">
+                <a href="#">| COMEDOR |</a>
+                <a href="#">| DORMITORIO |</a>
+                <a href="#">| LIVING |</a>
+                <a href="#">| DECORACIÓN |</a>
+                <a href="#">| HOME OFFICE |</a>
+                <a href="#">| TERRAZA |</a>
+        </div>
+    </header>
+
+    <!-- PÁGINA 1: Carrito de Compras -->
+    <div id="screen1" >
+        <div class="firstScreen">
+        <p class="statusBar"><strong>Carro de compras</strong> | Pago Seguro | Confirmación </p>
+        <div class="shoppingCartTable">
+            <ul class="box one">
+                <li>Producto</li><br><hr>
+                <li><img id="productScreen1" src="img/mueble.jpg"></li>
+                <li>Cód. Producto: 12345</li>
+                <li>Escritorio Iberia</li>
+                <li>Color: Oak-Turquesa</li>
+            </ul>
+            <ul class="box two">
+                <li>Métodos <br>
+                    de entrega</li><hr>
+                <li>Despacho a Domicilio</li>
+                <li>Retiro en tienda</li>
+            </ul>
+            <ul class="box three">
+                <li>Cantidad</li><br><hr>
+                <li>1 unidad</li>
+            </ul>
+            <ul class="box four">
+                <li>Precio <br>
+                    Unitario</li><hr>
+                <li>$80.000</li>
+            </ul>
+            <ul class="box five">
+                <li>Total</li><br><hr>
+                <li>$80.000</li>
+            </ul>
+        </div>
+
+        <div class="firstButton">
+            <button class="button" id="btnCart">Continuar con la compra</button>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- PÁGINA DOS: Resumen de compra + Validador de Tarjeta-->
+    <main id="screen2" class="hide">
+    <div class="secondScreen">
+        <p class="statusBar">Carro de compras| <strong>Pago Seguro </strong>  | Confirmación </p>
+        <div class="validationPage">
+            <div id="shoppingResume">
+                <ul>
+                <li>RESUMEN DE TU COMPRA</li>
+                <li><img id="productScreen2" src="img/mueble.jpg"></li>
+                <li>DETALLE</li>
+                <li>Cód. Producto: 12345</li>
+                <li>Escritorio Iberia</li>
+                <li>Color: Oak-Turquesa</li>
+                <hr>
+                <li><strong>TOTAL</strong></li> 
+                <li>$80.000</li>
+                </ul>
+            </div>
+
+        <div id="cardValidation">
+                <img id="creditCardImage"src="img/credit_card.png">
+            <div>
+                <input id="creditCardNumber" class="creditCardNumber" placeholder="N° de tarjeta (sin espacios)" maxlength="16"><br>
+                <p id="returnMessage" class="hide"></p>
+                <p id="returnErrorMessage" class="hide"></p>
+                <select id="month" type="text" placeholder="Mes venc.">
+                    <option type="radio">01</option>
+                    <option type="radio">02</option>
+                    <option type="radio">03</option>
+                    <option type="radio">04</option>
+                    <option type="radio">05</option>
+                    <option type="radio">06</option>
+                    <option type="radio">07</option>
+                    <option type="radio">08</option>
+                    <option type="radio">09</option>
+                    <option type="radio">10</option>
+                    <option type="radio">11</option>
+                    <option type="radio">12</option>
+                </select>
+                <select id="year" type="text" placeholder="Año venc."><br>
+                    <option type="radio">2020</option>
+                    <option type="radio">2021</option>
+                    <option type="radio">2022</option>
+                    <option type="radio">2023</option>
+                    <option type="radio">2024</option>
+                    <option type="radio">2025</option>
+                </select><br>
+                <input id="cvv" type="password" placeholder="CVV" maxlength="3">
+            </div>
+        </div>
+        </div>
+
+        <div class="secondButton">
+            <button class="buttonHide" id="btnBuy">Confirmar Pago</button>
+        </div>
+    </div>
+
+    </main>
+    <!-- PAGINA TRES-->
+    <main id="screen3" class="hide">
+    <div class="thirdScreen">
+    <p class="statusBar"></strong>
+        <section class="thanksContainer">
+            <img class="lastImage" src="img/fast-shopping-cart_rose.png"><br>
+            <h3>¡Gracias por elegir comprar en nuestra tienda!</h3>
+            <h3>Estamos preparando tu pedido</h3><br>
+            <button class="button" id="btnBuyAgain">Volver a comprar</button><br>
+
+        </section>
+    </div>
+    </main>
+
+    <footer>
+            <ul>
+                <li>SOBRE DESIGNICAL</li>
+                <hr>
+                <li>Quiénes somos</li>
+                <li>Prensa</li>
+                <li>Vender en Designical</li>
+                <li>FAQ</li>
+            </ul>
+
+            <ul>
+                <li>AYUDA</li>
+                <hr>
+                <li>hola@designical.cl</li>
+                <li>+56900000000</li>
+                <li>Seguimiento de tu pedido</li>
+            </ul>
+
+            <ul>
+                <li>FORMAS DE PAGO</li>
+                <hr>
+                <li>Tarjeta de Crédito</li>
+                <li>Transferencia Bancaria</li>
+                <li><img id="webpay" src="img/LogoWebpay_cl-Tarjetas-01.png"></li>
+            </ul>
+
+            <ul class="socialMedia">
+                <li>SÍGUENOS EN REDES <br>SOCIALES</li>
+                <hr>
+                <li><a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+               
+    </footer>
+    <script type="module" src="index.js" ></script>
+</body>
+</html>
