@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
+  "homepage":"https://mcmacarena.github.io/SCL014-card-validation/src/index.html",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
@@ -29,15 +30,5 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.20.0",
     "jest": "^24.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mcmacarena/SCL014-card-validation.git"
-  },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/mcmacarena/SCL014-card-validation/issues"
-  },
-  "homepage": "https://github.com/mcmacarena/SCL014-card-validation#readme",
-  "keywords": []
+  }
 }
