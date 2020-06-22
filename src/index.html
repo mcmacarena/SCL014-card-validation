@@ -31,56 +31,49 @@
     </header>
 
     <!-- PÁGINA 1: Carrito de Compras -->
-    <main id="screen1" class="">
-        <p class="statusBar"><strong>Carro de compras</strong>----------------------------------- Pago Seguro ------------------------------------------ Confirmación </p>
-        <section class="shoppingCartTable">
-            <table class="table1">
-                <tr>
-                    <th>Producto</th>
-                    <th>Métodos de Entrega</th>
-                    <th>Cantidad</th>
-                    <th>Precio Unitario</th>
-                    <th>Total</th>
-                </tr>
-
-                <tr>
-                    <td><img id="productScreen1" src="img/mueble.jpg" colspan="4"></td>
-                    <td>Despacho a domicilio<br>Retiro en Tienda</td>
-                    <td>1 Unidad</td>
-                    <td>$80.000</td>
-                    <td>$80.000</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>Cód. Producto: 12345<br>Escritorio Iberia<br>Color: Oak-Turquesa</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr class="bgTable">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>    
-        </section>
+    <div id="screen1" >
+        <div class="firstScreen">
+        <p class="statusBar"><strong>Carro de compras</strong> | Pago Seguro | Confirmación </p>
+        <div class="shoppingCartTable">
+            <ul class="box one">
+                <li>Producto</li><br><hr>
+                <li><img id="productScreen1" src="img/mueble.jpg"></li>
+                <li>Cód. Producto: 12345</li>
+                <li>Escritorio Iberia</li>
+                <li>Color: Oak-Turquesa</li>
+            </ul>
+            <ul class="box two">
+                <li>Métodos <br>
+                    de entrega</li><hr>
+                <li>Despacho a Domicilio</li>
+                <li>Retiro en tienda</li>
+            </ul>
+            <ul>
+                <li>Cantidad</li><br><hr>
+                <li>1 unidad</li>
+            </ul>
+            <ul>
+                <li>Precio <br>
+                    Unitario</li><hr>
+                <li>$80.000</li>
+            </ul>
+            <ul>
+                <li>Total</li><br><hr>
+                <li>$80.000</li>
+            </ul>
+        </div>
 
         <div class="firstButton">
             <button class="button" id="btnCart">Continuar con la compra</button>
         </div>
 
-    </main>
+    </div>
+
+    </div>
 
     <!-- PÁGINA DOS: Resumen de compra + Validador de Tarjeta-->
     <main id="screen2" class="hide">
-        <p class="statusBar">Carro de compras-----------------------------------<strong>Pago Seguro</strong> ------------------------------------------ Confirmación </p>
-        <section class="sectionShopping">
+        <p class="statusBar">Carro de compras| <strong>Pago Seguro </strong>  | Confirmación </p>
             <div id="shoppingResume">
                 <ul>
                 <li>RESUMEN DE TU COMPRA</li>
@@ -95,10 +88,8 @@
                 </ul>
             </div>
 
-        <div id="cardValidation">
-            <div>
-                <img id="creditCardImage" src="img/credit_card.png">
-            </div>
+        <div id="cardValidation">Carro de compras| Pago Seguro | <strong>Confirmación</strong>  </p>
+                <img class="creditCardImage"src="img/credit_card.png">
             <div>
                 <input id="creditCardNumber" class="creditCardNumber" placeholder="N° de tarjeta (sin espacios)" maxlength="16"><br>
                 <p id="returnMessage" class="hide"></p>
@@ -136,7 +127,7 @@
     </main>
     <!-- PAGINA TRES-->
     <main id="screen3" class="hide">
-    <p class="statusBar">Carro de compras-----------------------------------Pago Seguro ------------------------------------------<strong>Confirmación Pedido</strong></p>
+    <p class="statusBar"></strong>
         <section class="thanksContainer">
             <img class="lastImage" src="img/fast-shopping-cart_rose.png"><br>
             <h3>¡Gracias por elegir comprar en nuestra tienda!</h3>
